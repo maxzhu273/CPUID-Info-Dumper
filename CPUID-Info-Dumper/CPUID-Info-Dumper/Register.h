@@ -6,25 +6,19 @@ namespace CPUID_Info_Dumper
 {
 	class Register
 	{
-////////////////////////////////////////////////////////////////////////////////
 		private:
 		int value;
 
-
-
-		// Class Constructors //////////////////////////////////////////////////
+		// Class Constructors
 		public:
 		Register(int value);
 
-
-
-		// Methods /////////////////////////////////////////////////////////////
+		// Methods
+		public:
 		int getBits(int startPos, int numberOfBits);
 		int isBitSet(int position);
 
-
-
-		// Setters and Getters /////////////////////////////////////////////////
+		// Setters and Getters
 		public:
 		int getValue();
 	};
