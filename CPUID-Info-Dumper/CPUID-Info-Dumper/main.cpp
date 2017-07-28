@@ -14,11 +14,10 @@ int main()
 	using namespace std;
 	using namespace CPUID_Info_Dumper;
 
-	Register test = Register(0x12345678);
-	cout << bitset<32>(test.getValue()) << endl;
-	cout << bitset<32>(test.getBits(5, 7)) << endl;
-	cout << test.isBitSet(0) << endl;
-
+	Register test = Register(0b01110101111110110011010000110110);
+	cout << "test = " << test.getValue() << endl;
+	cout << "removeBits(13, 4) = " << test.removeBits(13, 4) << endl;
+	cout << "getBits(13, 4) = " << test.getBits(13, 4) << endl;
 
     return 0;
 }
