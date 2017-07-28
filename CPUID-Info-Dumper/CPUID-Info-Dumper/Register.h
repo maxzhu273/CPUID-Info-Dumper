@@ -13,12 +13,15 @@ namespace CPUID_Info_Dumper
 		public:
 		Register(int value);
 
-		// Methods
-		public:
+
+
+		// Methods /////////////////////////////////////////////////////////////
 		int getBits(int startPos, int numberOfBits);
 		int isBitSet(int position);
 
-		// Setters and Getters
+
+
+		// Setters and Getters /////////////////////////////////////////////////
 		public:
 		int getValue();
 	};
