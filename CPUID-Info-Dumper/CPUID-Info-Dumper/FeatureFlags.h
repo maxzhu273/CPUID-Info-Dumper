@@ -84,23 +84,24 @@ namespace CPUID_Info_Dumper
 		private:
 		Register ecx;
 		Register edx;
-
-		public:
 		std::map<CPU_Feature, bool> featureFlagMap;
 
 
 
-		// Class Constructor
+		// Class Constructor ///////////////////////////////////////////////////
 		public:
+		FeatureFlags(); // Default Constructor
 		FeatureFlags(Register ecx, Register edx);
 
 		
 
-		// Methods
+		// Methods /////////////////////////////////////////////////////////////
+		public:
+		void update(Register ecx, Register edx);
 
 
 
-		// Setters and Getters
+		// Setters and Getters /////////////////////////////////////////////////
 		public:
 		std::map<CPU_Feature, bool> getFeatureFlagMap();
 		bool getFeatureFlagStatus(CPU_Feature featureFlag);

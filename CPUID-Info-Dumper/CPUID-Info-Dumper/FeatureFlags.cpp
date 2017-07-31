@@ -4,7 +4,28 @@
 
 namespace CPUID_Info_Dumper
 {
-	FeatureFlags::FeatureFlags(Register ecx, Register edx) : ecx(ecx), edx(edx)
+	// Class Constructors //////////////////////////////////////////////////////
+	
+	FeatureFlags::FeatureFlags()
+	{
+		this->ecx = Register();
+		this->edx = Register();
+
+		this->featureFlagMap = std::map<CPU_Feature, bool>();
+	}
+
+	FeatureFlags::FeatureFlags(Register ecx, Register edx)
+	{
+		update(ecx, edx);
+	}
+
+
+
+
+
+	// Methods /////////////////////////////////////////////////////////////////
+	
+	void FeatureFlags::update(Register ecx, Register edx)
 	{
 		this->ecx = ecx;
 		this->edx = edx;
@@ -76,6 +97,12 @@ namespace CPUID_Info_Dumper
 		featureFlagMap[pbe] =		this->edx.isBitSet(31);
 	}
 
+
+
+
+
+	// Getters and Setters /////////////////////////////////////////////////////
+	
 	std::map<FeatureFlags::CPU_Feature, bool> FeatureFlags::getFeatureFlagMap()
 	{
 		return this->featureFlagMap;

@@ -42,6 +42,12 @@
     <ClInclude Include="CPUID.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="VendorID.h">
+      <Filter>Source Files\UtilityClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="CacheDescriptors.h">
+      <Filter>Source Files\UtilityClasses</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -64,6 +70,12 @@
     </ClCompile>
     <ClCompile Include="CPUID.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VendorID.cpp">
+      <Filter>Source Files\UtilityClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="CacheDescriptors.cpp">
+      <Filter>Source Files\UtilityClasses</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

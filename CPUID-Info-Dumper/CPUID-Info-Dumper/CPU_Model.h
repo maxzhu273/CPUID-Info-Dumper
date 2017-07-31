@@ -8,8 +8,8 @@ namespace CPUID_Info_Dumper
 {
 	class CPU_Model
 	{
-		Register register1;
-
+		private:
+		int processorSignature;
 		int steppingID;
 		int modelNumber;
 		int familyCode;
@@ -17,10 +17,27 @@ namespace CPUID_Info_Dumper
 		int extendedModel;
 		int extendedFamily;
 
-		// Class Constructor
-		CPU_Model(Register input); // CPUID(eax = 0x1) -> edx register
 
-		// Setters and Getters
+
+		// Class Constructors //////////////////////////////////////////////////
+		public:
+		CPU_Model(); // Default Constructor
+		CPU_Model(Register eax);
+
+
+
+		// Methods /////////////////////////////////////////////////////////////
+		private:
+		int calculateProcessorSignature(int registerValue);
+		
+		public:
+		void update(Register eax);
+
+
+
+		// Getters and Setters /////////////////////////////////////////////////
+		public:
+		int getProcessorSigature();
 		int getSteppingID();
 		int getModelNumber();
 		int getFamilyCode();
