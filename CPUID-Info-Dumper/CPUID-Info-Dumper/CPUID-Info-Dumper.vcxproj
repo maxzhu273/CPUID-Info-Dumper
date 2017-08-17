@@ -138,7 +138,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CacheDescriptors.h" />
+    <ClInclude Include="CacheDescriptorList.h" />
     <ClInclude Include="CPUID.h" />
     <ClInclude Include="CPUID_Output.h" />
     <ClInclude Include="CPU_Model.h" />
@@ -149,7 +149,7 @@
     <ClInclude Include="VendorID.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CacheDescriptors.cpp" />
+    <ClCompile Include="CacheDescriptorList.cpp" />
     <ClCompile Include="CPUID.cpp" />
     <ClCompile Include="CPUID_Output.cpp" />
     <ClCompile Include="CPU_Model.cpp" />

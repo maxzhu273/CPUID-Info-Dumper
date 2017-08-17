@@ -10,6 +10,7 @@ namespace CPUID_Info_Dumper
 {
 	class FeatureFlags
 	{
+		public:
 		enum CPU_Feature
 		{
 			//ecx
@@ -82,8 +83,6 @@ namespace CPUID_Info_Dumper
 		};
 
 		private:
-		Register ecx;
-		Register edx;
 		std::map<CPU_Feature, bool> featureFlagMap;
 
 
@@ -104,8 +103,5 @@ namespace CPUID_Info_Dumper
 		// Setters and Getters /////////////////////////////////////////////////
 		public:
 		std::map<CPU_Feature, bool> getFeatureFlagMap();
-		bool getFeatureFlagStatus(CPU_Feature featureFlag);
-		Register getEcx();
-		Register getEdx();
 	};
 }

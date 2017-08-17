@@ -16,5 +16,6 @@ namespace CPUID_Info_Dumper
 
 		// Struct Constructor
 		CPUID_Output();
+		CPUID_Output(int* fourElementArray);
 	};
 }

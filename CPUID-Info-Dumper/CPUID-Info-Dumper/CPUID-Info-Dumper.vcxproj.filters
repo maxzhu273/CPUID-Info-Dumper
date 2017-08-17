@@ -45,7 +45,7 @@
     <ClInclude Include="VendorID.h">
       <Filter>Source Files\UtilityClasses</Filter>
     </ClInclude>
-    <ClInclude Include="CacheDescriptors.h">
+    <ClInclude Include="CacheDescriptorList.h">
       <Filter>Source Files\UtilityClasses</Filter>
     </ClInclude>
   </ItemGroup>
@@ -74,7 +74,7 @@
     <ClCompile Include="VendorID.cpp">
       <Filter>Source Files\UtilityClasses</Filter>
     </ClCompile>
-    <ClCompile Include="CacheDescriptors.cpp">
+    <ClCompile Include="CacheDescriptorList.cpp">
       <Filter>Source Files\UtilityClasses</Filter>
     </ClCompile>
   </ItemGroup>
